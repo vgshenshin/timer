@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.timer {
+    padding-top: 30px;
+    height: 100vh;
+    background-color: blueviolet;
+    position: relative;
+}
+
+.timer__controls {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+}
+
+.timer__controls input {
+    display: block;
+    width: 130px;
+    height: 50px;
+}
+
+.timer__button {
+    height: 130px;
+    width: 130px;
+    background-color: rgb(114, 19, 203);
+    border: solid 1px rgb(90, 14, 161);
+    cursor: pointer;
+    transition: all .4s ease;
+    color: aliceblue;
+}
+
+.timer__button:hover {
+    background-color: rgb(125, 43, 202);
+}
+
+.timer_display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+    color: aliceblue;
+}
+
+.timer_display-left {
+    font-size: 150px;
+    text-align: center;
+    width: 400px;
+}
+
+.timer_display-end {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    width: 400px;
+}
